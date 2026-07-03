@@ -1,1 +1,239 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Design Essentials — Gallery Minimal Colour Studies</title><style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Bodoni+Moda:opsz,wght@6..96,500&display=swap');*{box-sizing:border-box}body{margin:0;background:#ece9e3;color:#181716;font-family:Inter,Arial,sans-serif}header{padding:5vw;border-bottom:1px solid #181716;display:grid;grid-template-columns:1.3fr .7fr;gap:4rem;align-items:end}h1,h2{font-family:'Bodoni Moda',Georgia,serif;font-weight:500}h1{font-size:clamp(3.5rem,8vw,8rem);line-height:.86;letter-spacing:-.05em;margin:0}header p{max-width:600px;line-height:1.7}.eyebrow{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.2rem}main{display:grid;grid-template-columns:1fr 1fr}.concept-card{color:inherit;text-decoration:none;border-right:1px solid #181716;border-bottom:1px solid #181716;padding:2.2rem}.concept-card:nth-child(2n){border-right:0}.preview{height:430px;background:var(--p);color:var(--i);padding:2rem;position:relative;overflow:hidden;border:1px solid var(--i)}.preview-line{position:absolute;left:0;right:0;top:62px;border-top:1px solid var(--i)}.preview-type{font:clamp(3rem,6vw,6rem)/.84 'Bodoni Moda';position:absolute;left:2rem;bottom:2rem;z-index:2}.preview-photo{position:absolute;right:2rem;top:95px;bottom:2rem;width:45%;background:linear-gradient(145deg,var(--a),var(--i));opacity:.85}.concept-info{display:grid;grid-template-columns:50px 1fr;gap:1rem;padding-top:1.3rem}.concept-info span{font-size:.7rem;letter-spacing:.14em}.concept-info h2{font-size:2rem;margin:0}.concept-info p{max-width:560px;line-height:1.6;margin:.5rem 0}footer{padding:2rem 5vw;font-size:.75rem}@media(max-width:800px){header,main{grid-template-columns:1fr}header{gap:2rem}.concept-card,.concept-card:nth-child(2n){border-right:0}.preview{height:360px}}</style></head><body><header><div><div class="eyebrow">Design Essentials / Colour study</div><h1>One design.<br>Five palettes.</h1></div><p>The fifth Gallery Minimal mockup is preserved as the common layout. Only the visual palette changes between routes. Two restrained additions—the process section and design statement—have been blended into every option.</p></header><main><a class="concept-card" href="1/"><div class="preview" style="--p:#F3EEE5;--i:#1B1916;--a:#A27045"><div class="preview-line"></div><div class="preview-type">Essential<br>spaces.</div><div class="preview-photo"></div></div><div class="concept-info"><span>01</span><div><h2>Warm Ivory / Bronze</h2><p>Warm, elegant and premium — the safest luxury direction for residential and turnkey interiors.</p></div></div></a><a class="concept-card" href="2/"><div class="preview" style="--p:#EEECE5;--i:#111A27;--a:#B08A56"><div class="preview-line"></div><div class="preview-type">Essential<br>spaces.</div><div class="preview-photo"></div></div><div class="concept-info"><span>02</span><div><h2>Midnight Navy / Champagne</h2><p>A formal architectural palette suited to offices, commercial spaces and premium residences.</p></div></div></a><a class="concept-card" href="3/"><div class="preview" style="--p:#F1EEE5;--i:#17352D;--a:#8E6B47"><div class="preview-line"></div><div class="preview-type">Essential<br>spaces.</div><div class="preview-photo"></div></div><div class="concept-info"><span>03</span><div><h2>Forest Green / Linen</h2><p>Organic, grounded and design-led — ideal for a sustainable, material-focused brand perception.</p></div></div></a><a class="concept-card" href="4/"><div class="preview" style="--p:#F6EFE7;--i:#2A211D;--a:#A9543D"><div class="preview-line"></div><div class="preview-type">Essential<br>spaces.</div><div class="preview-photo"></div></div><div class="concept-info"><span>04</span><div><h2>Terracotta / Bone</h2><p>Warm and memorable with an Indian material sensibility, while still feeling contemporary and premium.</p></div></div></a><a class="concept-card" href="5/"><div class="preview" style="--p:#EEEAE5;--i:#211C1D;--a:#6E2530"><div class="preview-line"></div><div class="preview-type">Essential<br>spaces.</div><div class="preview-photo"></div></div><div class="concept-info"><span>05</span><div><h2>Stone Taupe / Oxblood</h2><p>Editorial and distinctive — a fashion-forward palette for a gallery-like interior design portfolio.</p></div></div></a></main><footer>Open any palette to review its Home, Projects and Contact pages. Built using pure HTML and CSS; no JavaScript is included.</footer></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Design Essentials — Gallery Minimal Colour Studies</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Bodoni+Moda:opsz,wght@6..96,500&display=swap');
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: #ece9e3;
+            color: #181716;
+            font-family: Inter, Arial, sans-serif
+        }
+
+        header {
+            padding: 5vw;
+            border-bottom: 1px solid #181716;
+            display: grid;
+            grid-template-columns: 1.3fr .7fr;
+            gap: 4rem;
+            align-items: end
+        }
+
+        h1,
+        h2 {
+            font-family: 'Bodoni Moda', Georgia, serif;
+            font-weight: 500
+        }
+
+        h1 {
+            font-size: clamp(3.5rem, 8vw, 8rem);
+            line-height: .86;
+            letter-spacing: -.05em;
+            margin: 0
+        }
+
+        header p {
+            max-width: 600px;
+            line-height: 1.7
+        }
+
+        .eyebrow {
+            font-size: .7rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr
+        }
+
+        .concept-card {
+            color: inherit;
+            text-decoration: none;
+            border-right: 1px solid #181716;
+            border-bottom: 1px solid #181716;
+            padding: 2.2rem
+        }
+
+        .concept-card:nth-child(2n) {
+            border-right: 0
+        }
+
+        .preview {
+            height: 430px;
+            background: var(--p);
+            color: var(--i);
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--i)
+        }
+
+        .preview-line {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 62px;
+            border-top: 1px solid var(--i)
+        }
+
+        .preview-type {
+            font: clamp(3rem, 6vw, 6rem)/.84 'Bodoni Moda';
+            position: absolute;
+            left: 2rem;
+            bottom: 2rem;
+            z-index: 2
+        }
+
+        .preview-photo {
+            position: absolute;
+            right: 2rem;
+            top: 95px;
+            bottom: 2rem;
+            width: 45%;
+            background: linear-gradient(145deg, var(--a), var(--i));
+            opacity: .85
+        }
+
+        .concept-info {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            gap: 1rem;
+            padding-top: 1.3rem
+        }
+
+        .concept-info span {
+            font-size: .7rem;
+            letter-spacing: .14em
+        }
+
+        .concept-info h2 {
+            font-size: 2rem;
+            margin: 0
+        }
+
+        .concept-info p {
+            max-width: 560px;
+            line-height: 1.6;
+            margin: .5rem 0
+        }
+
+        footer {
+            padding: 2rem 5vw;
+            font-size: .75rem
+        }
+
+        @media(max-width:800px) {
+
+            header,
+            main {
+                grid-template-columns: 1fr
+            }
+
+            header {
+                gap: 2rem
+            }
+
+            .concept-card,
+            .concept-card:nth-child(2n) {
+                border-right: 0
+            }
+
+            .preview {
+                height: 360px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="eyebrow">Design Essentials / Colour study</div>
+            <h1>One design.<br>Five palettes.</h1>
+        </div>
+        <p>The fifth Gallery Minimal mockup is preserved as the common layout. Only the visual palette changes between
+            routes. Two restrained additions—the process section and design statement—have been blended into every
+            option.</p>
+    </header>
+    <main><a class="concept-card" href="1/">
+            <div class="preview" style="--p:#F3EEE5;--i:#1B1916;--a:#A27045">
+                <div class="preview-line"></div>
+                <div class="preview-type">Essential<br>spaces.</div>
+                <div class="preview-photo"></div>
+            </div>
+            <div class="concept-info"><span>01</span>
+                <div>
+                    <h2>Warm Ivory / Bronze</h2>
+                    <p>Warm, elegant and premium — the safest luxury direction for residential and turnkey interiors.
+                    </p>
+                </div>
+            </div>
+        </a><a class="concept-card" href="2/">
+            <div class="preview" style="--p:#EEECE5;--i:#111A27;--a:#B08A56">
+                <div class="preview-line"></div>
+                <div class="preview-type">Essential<br>spaces.</div>
+                <div class="preview-photo"></div>
+            </div>
+            <div class="concept-info"><span>02</span>
+                <div>
+                    <h2>Midnight Navy / Champagne</h2>
+                    <p>A formal architectural palette suited to offices, commercial spaces and premium residences.</p>
+                </div>
+            </div>
+        </a><a class="concept-card" href="3/">
+            <div class="preview" style="--p:#F1EEE5;--i:#17352D;--a:#8E6B47">
+                <div class="preview-line"></div>
+                <div class="preview-type">Essential<br>spaces.</div>
+                <div class="preview-photo"></div>
+            </div>
+            <div class="concept-info"><span>03</span>
+                <div>
+                    <h2>Forest Green / Linen</h2>
+                    <p>Organic, grounded and design-led — ideal for a sustainable, material-focused brand perception.
+                    </p>
+                </div>
+            </div>
+        </a><a class="concept-card" href="4/">
+            <div class="preview" style="--p:#F6EFE7;--i:#2A211D;--a:#A9543D">
+                <div class="preview-line"></div>
+                <div class="preview-type">Essential<br>spaces.</div>
+                <div class="preview-photo"></div>
+            </div>
+            <div class="concept-info"><span>04</span>
+                <div>
+                    <h2>Terracotta / Bone</h2>
+                    <p>Warm and memorable with an Indian material sensibility, while still feeling contemporary and
+                        premium.</p>
+                </div>
+            </div>
+        </a><a class="concept-card" href="5/">
+            <div class="preview" style="--p:#EEEAE5;--i:#211C1D;--a:#6E2530">
+                <div class="preview-line"></div>
+                <div class="preview-type">Essential<br>spaces.</div>
+                <div class="preview-photo"></div>
+            </div>
+            <div class="concept-info"><span>05</span>
+                <div>
+                    <h2>Stone Taupe / Oxblood</h2>
+                    <p>Editorial and distinctive — a fashion-forward palette for a gallery-like interior design
+                        portfolio.</p>
+                </div>
+            </div>
+        </a></main>
+    <footer>Open any palette to review its Home, Projects and Contact pages. Built using pure HTML and CSS; no
+        JavaScript is included.</footer>
+</body>
+
+</html>
